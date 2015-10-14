@@ -1,4 +1,3 @@
-"use strict";
 com.ibm.calculatrice.events = {
 	bind : function(selector, events, callback){ 
     var selectTab = getBean("plugins").$(selector);

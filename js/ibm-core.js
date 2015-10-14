@@ -1,4 +1,3 @@
-"use strict";
 function getBean(param){
 	if(param == 'repository') param='dao';
 	if (com.ibm.calculatrice[param] == undefined) {

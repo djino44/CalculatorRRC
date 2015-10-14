@@ -1,4 +1,3 @@
-"use strict";
 var saveOrUpdate = function(calcul){
 		getBean("plugins").storage().setItem("calcul", JSON.stringify(calcul));
 	};

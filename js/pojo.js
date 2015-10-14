@@ -1,4 +1,3 @@
-"use strict";
 com.ibm.calculatrice.pojo = {
 	Calculatrice : function (pSize, pColor, pOperations){
 	this.size = pSize;

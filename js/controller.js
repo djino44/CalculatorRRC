@@ -1,4 +1,3 @@
-"use strict";
 var execute = function(pAction, pTarget, pParams){
 		pAction.apply(pTarget, pParams);
 	};
@@ -15,7 +14,7 @@ var methodPourCalculer = function(event){
 	params.push(bool1);
 
 
-	if (content != "=" && content != "Memory") {
+	if (content != "=" && content != "Memory" && content != "C") {
 		formule.textContent += content;
 		calcul["concat"] = formule.textContent;
 	}
@@ -24,12 +23,14 @@ var methodPourCalculer = function(event){
 					var oldCalc = getBean("services").read();
 					formule.textContent = oldCalc["concat"];
 					resultEcran.textContent = oldCalc["valeurPrec"];
+					calcul["concat"] = oldCalc["concat"];
+					calcul["valeurPrec"] = oldCalc["valeurPrec"];
 				break;
 			case "C":
 					formule.innerHTML = "";
 					resultEcran.innerHTML = "";
 					operateur = "";
-					calcul = new getBean("pojo").Calcul();
+					calcul = new (getBean("pojo").Calcul)();
 					//getBean("services").delete1(calcul);
 				break;
 			case "+":

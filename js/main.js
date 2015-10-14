@@ -1,4 +1,3 @@
-"use strict";
 //@Author: Merliot Geoffrey//
 var calcul = new (getBean("pojo").Calcul)();
 var operateur = "";

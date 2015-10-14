@@ -51,15 +51,3 @@ op:hover, num:hover{
 op:active, num:active{
     background-color: yellow;
 }
-
-.video {
-   padding-top: 56%;
-   position: relative;
-}
-
-.video iframe {
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-}
