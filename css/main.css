@@ -1,0 +1,65 @@
+calc {
+    font-size: 22px;
+    width: 180px;
+    height: 280px;
+    display: inline-block;
+    background-color: blue;
+    padding: 10px 10px 20px 10px;
+}
+
+ecran {
+    width: 99%;
+    height: 20%;
+    border: 1px solid green;
+    display: block;
+    margin: 1px auto;
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+touches{
+    background-color: grey;
+    width: 100%;
+    height: 80%;
+    display: inline-block;
+    color: white;
+    border-radius: 5px;
+}
+
+num, op{
+    background-color: #795151;
+    position: relative;
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 6px 0px 0px 6px;
+    padding: 5px 0px 5px 0px;
+}
+
+#memory {
+  width: 92%;
+}
+
+op:hover, num:hover{
+    background-color: red;
+}
+
+op:active, num:active{
+    background-color: yellow;
+}
+
+.video {
+   padding-top: 56%;
+   position: relative;
+}
+
+.video iframe {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+}
